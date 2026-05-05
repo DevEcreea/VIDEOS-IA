@@ -301,7 +301,7 @@ async def gen_image(prompt: str, style: str, aspect: str) -> bytes:
     try:
         img_gen = OpenAIImageGeneration(api_key=EMERGENT_LLM_KEY)
         images = await img_gen.generate_images(
-            prompt=full_prompt, model="gpt-image-1", number_of_images=1, quality="high"
+            prompt=full_prompt, model="gpt-image-1", number_of_images=1, quality="medium"
         )
         if images:
             return images[0]
