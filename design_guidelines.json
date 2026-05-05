@@ -1,0 +1,127 @@
+{
+  "project_name": "AI Video Generator Pro",
+  "theme": "dark",
+  "archetype": "Archetype 4: Swiss & High-Contrast (Swiss Brutalist)",
+  "vibe_and_principles": [
+    "Objective, rigid, functional, pro-level camera command center.",
+    "Banned: Generic purple/teal gradients and soft rounded corners (AI slop).",
+    "Focus: Content is king. The interface must fade away so the video preview pops.",
+    "Color is for function only: UI is monochrome (Void Black, 10% Grey, stark white), while Action is Signal Red."
+  ],
+  "typography": {
+    "fonts_to_install": [
+      "@fontsource/cabinet-grotesk",
+      "@fontsource/ibm-plex-sans",
+      "@fontsource/jetbrains-mono"
+    ],
+    "headings": {
+      "family": "Cabinet Grotesk",
+      "classes": "font-black tracking-tighter text-white",
+      "usage": "Landing page hero, main section titles, massive numbers."
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "classes": "font-normal tracking-normal text-zinc-300",
+      "usage": "General UI text, paragraphs, tooltips, standard buttons."
+    },
+    "monospace": {
+      "family": "JetBrains Mono",
+      "classes": "font-mono tracking-tight text-xs uppercase",
+      "usage": "Timeline timecodes, credit balances, labels, file metadata."
+    }
+  },
+  "colors": {
+    "background": {
+      "main": "#050505",
+      "panel": "#111111",
+      "surface": "#1A1A1A",
+      "surface_hover": "#27272A"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "tertiary": "#52525B",
+      "inverse": "#000000"
+    },
+    "accent": {
+      "primary": "#FF3333",
+      "hover": "#CC0000",
+      "active_recording": "#FF3B30",
+      "processing": "#00E5FF"
+    },
+    "border": {
+      "default": "rgba(255, 255, 255, 0.1)",
+      "focus": "#FF3333"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Strict geometric containment. Generous negative space in the canvas, extreme density in the control panels.",
+    "border_radius": "rounded-none or max rounded-sm (2px-4px). NO large rounded corners.",
+    "grids": {
+      "dashboard": "Bento Grid, 'Control Room' mode. grid-cols-1 md:grid-cols-4. Strict 1px borders between widgets.",
+      "editor": "h-screen, flex-col. No page scroll. Left sidebar (w-80), Canvas (flex-1), Timeline bottom (h-64)."
+    }
+  },
+  "components_design": {
+    "buttons": {
+      "primary_cta": "bg-[#FF3333] text-white font-mono text-sm uppercase tracking-widest px-8 py-4 hover:bg-[#CC0000] transition-colors border border-transparent shadow-[0_0_20px_rgba(255,51,51,0.2)]",
+      "secondary": "bg-transparent text-white border border-white/20 hover:border-white/60 hover:bg-white/5 font-mono text-xs px-4 py-2 uppercase"
+    },
+    "sidebar": {
+      "container": "w-80 bg-[#111111] border-r border-white/10 h-full flex flex-col overflow-y-auto",
+      "panels": "p-6 border-b border-white/10 last:border-b-0 space-y-6"
+    },
+    "canvas_preview": {
+      "container": "flex-1 bg-[#050505] flex items-center justify-center p-12 relative overflow-hidden",
+      "video_wrapper": "relative w-full max-h-full aspect-video bg-black ring-1 ring-white/10 shadow-2xl flex items-center justify-center overflow-hidden"
+    },
+    "timeline": {
+      "container": "h-64 bg-[#111111] border-t border-white/10 flex flex-col",
+      "toolbar": "h-10 border-b border-white/10 bg-[#1A1A1A] flex items-center px-4",
+      "tracks_area": "flex-1 overflow-x-auto overflow-y-hidden p-4 space-y-2 relative",
+      "track": "h-12 bg-white/5 border border-white/10 rounded-sm relative flex items-center px-2",
+      "clip_video": "bg-blue-600/20 border border-blue-500 text-blue-200 text-xs px-2 h-8 absolute rounded-sm flex items-center font-mono",
+      "clip_audio": "bg-emerald-600/20 border border-emerald-500 text-emerald-200 text-xs px-2 h-8 absolute rounded-sm flex items-center font-mono",
+      "clip_text": "bg-amber-600/20 border border-amber-500 text-amber-200 text-xs px-2 h-8 absolute rounded-sm flex items-center font-mono"
+    },
+    "cards": {
+      "style": "bg-[#111111] border border-white/10 p-6 rounded-sm hover:border-white/30 transition-all cursor-pointer"
+    },
+    "forms": {
+      "input": "bg-black border border-white/20 focus:border-[#FF3333] focus:ring-1 focus:ring-[#FF3333] rounded-sm p-3 text-white placeholder-zinc-500 w-full",
+      "textarea": "bg-black border border-white/20 focus:border-[#FF3333] focus:ring-1 focus:ring-[#FF3333] rounded-sm p-3 text-white placeholder-zinc-500 w-full min-h-[120px] resize-none"
+    }
+  },
+  "media_urls": [
+    {
+      "category": "hero_background",
+      "url": "https://images.pexels.com/photos/5563240/pexels-photo-5563240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Cinematic dark video studio equipment setup, perfect for landing page hero background with black/50 overlay."
+    },
+    {
+      "category": "abstract_tech",
+      "url": "https://images.unsplash.com/photo-1759159347827-de3a54002de7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMGRhcmslMjB0ZWNofGVufDB8fHx8MTc3Nzk5NjgxOHww&ixlib=rb-4.1.0&q=85",
+      "description": "Dark cubes with glowing lines, ideal for 'Generating Video' state background or AI section."
+    },
+    {
+      "category": "user_avatar",
+      "url": "https://images.pexels.com/photos/32721690/pexels-photo-32721690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Professional user avatar for the top navigation bar."
+    },
+    {
+      "category": "corporate_logo",
+      "url": "https://images.unsplash.com/photo-1776243365737-129e75f0794f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjB0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3Nzc5OTY4MTV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Sample logo texture to be used in UI placeholders if needed."
+    }
+  ],
+  "accessibility_and_testing": {
+    "focus_states": "All interactable elements must have explicit focus states. `focus-visible:ring-2 focus-visible:ring-[#FF3333] focus-visible:outline-none`",
+    "test_ids": "Crucial: EVERY button, input, and timeline track must have a `data-testid` attribute. E.g., `data-testid=\"generate-video-btn\"`, `data-testid=\"prompt-textarea\"`."
+  },
+  "instructions_to_main_agent": {
+    "setup": "Install Lucide React for icons. Set up Tailwind with the custom colors defined above. Use pure HTML/Tailwind for structural layout to maintain the rigid Swiss Brutalist grid.",
+    "shadcn_overrides": "When using Shadcn components (like Slider, Select, Dialog), override default radii to `rounded-sm` and strip shadow-md for flat borders.",
+    "layout_execution": "Start with the Dashboard route (/dashboard) and Editor route (/editor). The Editor MUST be 100vh with no external scrollbar (overflow-hidden on body). Allow scroll only within the left sidebar and timeline areas.",
+    "animations": "Keep animations instant or very fast (150ms). This is a pro tool, it should feel incredibly responsive, not floaty."
+  }
+}
